@@ -2,48 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>How A.I. and Social Media Contribute to ‘Brain Rot’ | NYT Visual Articles</title>
+  <title>How A.I. and Social Media Contribute to ‘Brain Rot’</title>
 
-  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="article-1.css" />
 </head>
+
 <body>
-  <header class="site-header">
-    <nav class="site-nav">
-      <a href="../index.html" class="nav-back">← All Visual Articles</a>
-    </nav>
-  </header>
+<aside class="link-dock" id="linkDock" aria-hidden="true">
+  <div class="link-dock-inner">
+    <div class="link-dock-kicker">Link preview</div>
 
+    <div class="link-dock-title"></div>
+    <div class="link-dock-subtitle"></div>
 
-  <body>
-  <div class="orb orb-red"></div>
-  <div class="orb orb-green"></div>
-  <div class="orb orb-cyan"></div>
+    <a class="link-dock-button" target="_blank" rel="noopener">
+    </a>
+
+  </div>
+</aside>
+
+    <!-- loop video -->
+    <!--
+    <video
+      class="landing-video"
+      src="../images/brainrot.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+    ></video>
+    -->
+
+    <header class="landing-hero" aria-hidden="true">
+  <img class="landing-bg" src="../images/brainrot-landing.png" alt="" />
+
+  <div class="hero-stage" id="heroStage">
+    <canvas id="spiralOverlay" class="spiral-overlay" aria-hidden="true"></canvas>
+
+    <div class="phone-hero" id="phoneHero">
+      <img class="phone-img" src="../images/phone.png" alt="" />
+
+  <img class="screen-glow" src="../images/screen-glow.png" alt="" aria-hidden="true" />
+
+<div class="thumb-palm-wrap" aria-hidden="true">
+  <img class="thumb-palm" id="thumbPalm" src="../images/thumb-palm.png" alt="" />
+</div>
+
+<div class="thumb-finger-wrap" aria-hidden="true">
+  <img class="thumb-finger" id="thumbFinger" src="../images/thumb-finger.png" alt="" />
+</div>
+
+      <div class="phone-screen" id="phoneScreen" aria-hidden="true">
+        <div class="reel-track" id="reelTrack"></div>
+        <div class="tap-hint" id="tapHint">tap to scroll</div>
+      </div>
+    </div>
+  </div>
+</header>
 
   <article class="article-page">
-  </article>
-
-  <script src="../script.js"></script>
-  <script src="article-1.js"></script>
-</body>
-
-
-  <article class="article-page">
-
-    <header class="article-header" id="hero">
-      <h1>How A.I. and Social Media Contribute to ‘Brain Rot’</h1>
+    <header class="article-header">
       <p class="dek">
         A.I. search tools, chatbots and social media are associated with lower cognitive
         performance, studies say. What to do?
       </p>
       <p class="byline">By Brian X. Chen</p>
-      <p class="meta">
-        Brian X. Chen is The Times’s lead consumer technology writer and the author of Tech Fix,
-        a column about the social implications of the tech we use.
-      </p>
       <p class="dateline">Nov. 6, 2025</p>
     </header>
-
     <main class="article-body">
       <section id="melumad-experiment">
         <p>
@@ -75,25 +101,64 @@
       </section>
 
       <section id="brain-rot-definition">
-        <p>
+        <p data-no-dropword>
           Welcome to the era of “brain rot,” the slang term to describe a deteriorated mental
           state from engaging with low-quality internet content. When Oxford University Press,
-          the publisher of the Oxford English Dictionary, named brain rot the word of the year
-          in 2024, the definition referred to how social media apps like TikTok and Instagram
+          the publisher of the Oxford English Dictionary,
+          <a class="link-pop"
+             href="https://www.nytimes.com/2024/12/01/arts/brain-rot-oxford-word.html"
+             target="_blank" 
+             rel="noopener noreferrer"
+             data-preview-title="NYT: Oxford’s 2024 Word of the Year Is…"
+             data-preview-subtitle="After digging through its enormous database, it has chosen “brain rot” — specifically, the kind brought on by digital overload — as its 2024 Word of the Year.
+            It’s been quite a journey for “brain rot,” which triumphed over a shortlist of contenders including “lore,” “demure,” “romantasy,” “dynamic pricing” and “slop.”">
+
+            “named brain rot the word of the year in 2024”
+          </a>,
+          the definition referred to how social media apps like TikTok and Instagram
           had people hooked on short videos, turning their brains into mush.
         </p>
+
+        <figure class="inline-media" data-io-play>
+
+    <video
+      class="inline-media-video"
+      src="../images/article1-doomscrolling.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+    ></video>
+  
+  <figcaption class="inline-media-caption">
+    As people cycle through short videos on social media, often called “doom scrolling,” the brain’s dopamine system becomes overstimulated, gradually shrinking attention spans.
+  </figcaption>
+</figure>
+
+
         <p>
           Whether technology makes people dumber is a question as old as technology itself.
           Socrates faulted the invention of writing for weakening human memory. As recently as
           2008, many years before the arrival of A.I.-generated web summaries, The Atlantic
-          published an essay titled, “Is Google Making Us Stupid?” Those concerns turned out to
-          be overblown.
+          published an essay titled,
+          <a class="link-pop"
+             href="https://www.theatlantic.com/magazine/archive/2008/07/is-google-making-us-stupid/306868/"
+             target="_blank" 
+             rel="noopener noreferrer"
+             data-preview-title="The Atlantic: Is Google Making Us Stupid?"
+             data-preview-subtitle="What the Internet is doing to our brains.">
+            “Is Google Making Us Stupid?”
+          </a>
+          Those concerns turned out to be overblown.
         </p>
+
         <p>
           But the growing wariness in academia of the impact of A.I. on learning (on top of
           older concerns about the distracting nature of social media apps) is troubling news
           for a country whose performance in reading comprehension is already in steep decline.
         </p>
+
         <p>
           This year, reading scores among children, including eighth graders and high school
           seniors, hit new lows. The results, gathered from the National Assessment of
@@ -101,6 +166,7 @@
           exam, were the first of their kind to be published since the Covid-19 pandemic
           disrupted education and drove up screen time among youths.
         </p>
+
         <p>
           Researchers worry that evidence is mounting of a potent link between lower cognitive
           performance and A.I and social media. In addition to recent studies that found a
@@ -108,17 +174,16 @@
           pediatricians found that social media use was associated with poorer performance among
           children taking reading, memory and language tests.
         </p>
-      </section>
 
-      <section id="research-summary">
-        <p class="section-kicker">
+        <p>
           Here’s a summary of the research so far, and how to use A.I. in a way that boosts —
           rather than rots — the brain.
         </p>
       </section>
 
       <section id="mit-study">
-        <h2>When we write with ChatGPT, are we even writing?</h2>
+        <h2>When we write with&nbsp;ChatGPT, are we even writing?</h2>
+
         <p>
           The most high-profile study this year about A.I.’s effects on the brain came out of
           the Massachusetts Institute of Technology, where researchers sought to understand how
@@ -126,11 +191,22 @@
           54 college students, had a small sample size, but the results raised important
           questions about whether A.I. could stifle people’s abilities to learn.
         </p>
+
         <p class="note">
-          (The New York Times has sued OpenAI and its partner, Microsoft, claiming copyright
+          (The New York Times has
+          <a class="link-pop"
+             href="https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html"
+             target="_blank" rel="noopener noreferrer"
+             data-preview-title="NYT: The Times Sues OpenAI and Microsoft Over A.I. Use of Copyrighted Work"
+             data-preview-subtitle="Millions of articles from The New York Times were used to train chatbots that now compete with it, the lawsuit said.">
+            
+             “sued”
+          </a>
+          OpenAI and its partner, Microsoft, claiming copyright
           infringement of news content related to A.I. systems. The two companies have denied
           those claims.)
         </p>
+
         <p>
           For part of the study, students were asked to write an essay ranging from 500 to
           1,000 words, and they were divided into different groups: One group could write with
@@ -138,28 +214,51 @@
           Google search, and a third group could rely only on their brains to compose their
           assignment.
         </p>
+
         <p>
           The students wore sensors that measured electrical activity in their brains. The
           ChatGPT users showed the lowest brain activity, which was unsurprising since they
           were letting the A.I. chatbot do the work.
         </p>
+
+ <figure class="inline-media" data-io-play>
+ 
+    <video
+      class="inline-media-video"
+      src="../images/article1-brainactivity.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+    ></video>
+
+  <figcaption class="inline-media-caption">
+    ChatGPT users showed up to 40% lower brain engagement than manual writers, with reduced neural connectivity in regions linked to critical thinking, memory, and creativity.
+  </figcaption>
+</figure>
+
+
         <p>
           But the most striking revelation arose after the students finished the writing
           exercise. One minute after completing their essays, the students were asked to quote
           any part of their essay. The vast majority of ChatGPT users (83 percent) could not
           recall a single sentence.
         </p>
+
         <p>
           In contrast, the students using Google’s search engine could quote some parts, and
           the students who relied on no tech could recite lots of lines, with some even quoting
           almost the entirety of their essays verbatim.
         </p>
+
         <p class="pull-quote">
           “It has been one minute, and you really cannot say anything?” said Nataliya Kosmyna,
           the research scientist at M.I.T. Media Lab who led the study, about the ChatGPT
           users. “If you don’t remember what you wrote, you don’t feel ownership. Do you even
           care?”
         </p>
+
         <p>
           Though the study focused on essay writing, Dr. Kosmyna said she worried about the
           implications for people using A.I. chatbots in fields where retention is essential,
@@ -169,14 +268,49 @@
       </section>
 
       <section id="social-media-study">
-        <h2>Social media may be linked to lower reading scores.</h2>
+        <h2>Social media may be linked to lower reading&nbsp;scores.</h2>
+
+<figure class="inline-media" data-io-play>
+
+    <video
+      class="inline-media-video"
+      src="../images/article1-graph.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+    ></video>
+
+  <figcaption class="inline-media-caption">
+    <a class="caption-link"
+       href="https://www.nationsreportcard.gov/reports/reading/2024/g12/"
+       target="_blank" rel="noopener noreferrer">
+      Grade 12 NAEP reading scores
+    </a>
+    for 2024 fell to 283, a decline from 285 in 2019 and 292 in 1992, marking the lowest levels reported on the assessment.
+  </figcaption>
+</figure>
+
+
         <p>
           Over the last two years, schools in states like New York, Indiana, Louisiana and
-          Florida have raced to ban cellphones from classrooms, citing concerns that students
+          Florida have
+          <a class="link-pop"
+             href="https://www.nytimes.com/2024/08/11/technology/school-phone-bans-indiana-louisiana.html"
+             target="_blank" 
+             rel="noopener noreferrer"
+             data-preview-title="NYT: Why Schools Are Racing to Ban Student Phones"
+             data-preview-subtitle="As the new school year starts, a wave of new laws that aim to curb distracted learning is taking effect in Indiana, Louisiana and other states.">
+            
+             “raced to ban cellphones from classrooms”
+          </a>,
+          citing concerns that students
           were distracting themselves with social media apps like TikTok and Instagram. Lending
           credence to the bans, a study published last month found a potent link between social
           media use and poorer cognitive performance.
         </p>
+
         <p>
           Last month, the medical journal JAMA published a study conducted by the University of
           California, San Francisco. Dr. Jason Nagata, a pediatrician who led the study, and
@@ -184,17 +318,20 @@
           a research project that followed more than 6,500 youths from age 9 to 13 from 2016 to
           2018.
         </p>
+
         <p>
           All the children were surveyed once a year on how much time they used social media.
           Every other year, they took several tests. For example, a visual vocabulary test
           involved correctly matching pictures to words they heard.
         </p>
+
         <p>
           The data showed that children who reported using a low amount of social media (one
           hour a day) to a high amount (at least three hours a day) scored significantly lower
           on reading, memory and vocabulary tests than children who reported using no social
           media.
         </p>
+
         <p>
           As for why social media apps like TikTok and Instagram would harm test scores, the
           only safe conclusion is that every hour a child spends scrolling through the apps
@@ -205,39 +342,52 @@
 
       <section id="healthier-use">
         <h2>What are some healthier ways to use social media and A.I.?</h2>
+
         <p>
           Despite findings of a correlation between social media use and cognitive decline, it
           would be difficult to recommend an ideal amount of screen time for youths, because
           lots of children spend time in front of screens doing things unrelated to social
           media, like watching TV shows, Dr. Nagata said.
         </p>
+
         <p>
           Instead, he suggested that parents enforce screen-free zones, prohibiting phone use
           in areas like the bedroom and dinner table so that children can stay focused on their
           studies, sleep and mealtimes.
         </p>
+
         <p>
-          Meta did not respond to a request for comment. A TikTok spokeswoman referred to a
-          webpage with instructions to set up Time Away, a tool for parents to create schedules
+          Meta did not respond to a request for comment. A TikTok spokeswoman
+          <a class="link-pop"
+             href="https://newsroom.tiktok.com/new-ways-we-are-supporting-parents-and-helping-teens-build-balanced-digital-habits?lang=en"
+             target="_blank" rel="noopener noreferrer"
+             data-preview="TikTok: Time Away parental controls">
+            “referred to a webpage with instructions to set up Time Away”
+          </a>,
+          a tool for parents to create schedules
           for when their teenagers are allowed to use TikTok.
         </p>
+
         <p>
           As for A.I. chatbots, there was an interesting wrinkle in the M.I.T. study that
           presented a possible solution on how people could best use chatbots to learn and
           write.
         </p>
+
         <p>
           Eventually, the groups in that study swapped roles: The people who relied only on
           their brains to write got to use ChatGPT, and the people who had relied on ChatGPT
           could use only their brains. All the students wrote essays on the same topics they
           had chosen before.
         </p>
+
         <p>
           The students who had originally relied only on their brains recorded the highest
           brain activity once they were allowed to use ChatGPT. The students who had initially
           used ChatGPT, on the other hand, were never on a par with the former group when they
           were restricted to using their brains, Dr. Kosmyna said.
         </p>
+
         <p>
           That suggests that people who are eager to use chatbots for writing and learning
           should consider starting the process on their own before turning to the A.I. tools
@@ -245,12 +395,14 @@
           solve problems only after they have used pencil and paper to learn the formulas and
           equations. Both Google and OpenAI declined to comment.
         </p>
+
         <p>
           Dr. Melumad, the Wharton professor who led the earlier study involving A.I. search
           tools, said the problem with those tools was that they transformed what was once an
           active process in your brain — perusing through links and clicking on a credible
           source to read — into a passive one by automating all of that.
         </p>
+
         <p>
           So perhaps the key to using A.I. in a healthier way, she said, is to try to be more
           mindful in how we use them. Rather than ask a chatbot to do all the research on a
